@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Club</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffeef2;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e07a9e;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #d64d73;
+        }
+
+        header {
+            background-color: #ffd1dc;
+            color: #e07a9e;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f7a1b1;
+            color: white;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section h2 {
+            color: #e07a9e;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        /* Services Section */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-item {
+            background-color: #ffd1dc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item h3 {
+            color: #e07a9e;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .service-item p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-item {
+            background-color: #ffd1dc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .contact-item h4 {
+            color: #e07a9e;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .contact-item p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #ffd1dc;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pet Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Pet Club</h2>
+        <p>Your Pet’s Home Away From Home</p>
+        <p>We provide top-notch boarding services for your furry friends, ensuring they are well cared for and loved while you're away.</p>
+        <p>"Find Your New Best Friend! 💕 Discover our selection of happy, healthy puppies ready to bring joy to your home. Let us help you find the perfect furry companion!"</p>
+        <img src="https://res.cloudinary.com/dxtp4ku5v/image/upload/v1723299866/WhatsApp_Image_2024-08-10_at_19.35.56_gbh4pf.jpg" alt="Happy Dogs">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Overnight Boarding</h3>
+                <p>Comfortable and secure environment with 24/7 care, ensuring your pet feels right at home.</p>
+            </div>
+            <div class="service-item">
+                <h3>Dog Sales</h3>
+                <p>"Meet Your New Best Friend! 🐶❤️ Check out our adorable puppies ready to join your family!"</p>
+            </div>
+            <div class="service-item">
+                <h3>4-Weeks Boarding</h3>
+                <p>"Safe and Cozy 4-Week Boarding 🏡🐕 Your pet's home away from home, with loving care for an extended stay."</p>
+            </div>
+            <div class="service-item">
+                <h3>Senior Dog Care</h3>
+                <p>"Gentle Care for Senior Dogs 🐾💖 Providing comfort and love for your aging companions in their golden years."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Pet Club!<p>
+        <p>At Happy Paws Kennel, we love pets just as much as you do. Our goal is to make sure every pet feels safe, happy, and loved. Here’s what we offer:</p>
+            
+        <p>Boarding Services:
+            When you need to leave your pet, we provide a comfy place for them to stay. Our kennels are clean and cozy, with soft beds and lots of playtime. Our friendly staff takes care of feeding, exercise, and all your pet’s needs to make sure they are well taken care of while you’re away.</p> 
+        <p>Dog Sales:
+            Looking for a new puppy? We can help! We have a selection of healthy and happy puppies ready to join your family. Each puppy is raised in a caring environment to ensure they are friendly and well-adjusted. We’re here to help you find the perfect match for your home.</p>
+        <p>At Happy Paws Kennel, we treat every pet like part of our family. Whether they’re staying with us or you’re finding a new puppy, we’re here to make sure you and your pets are happy and satisfied.
+        </p>
+        <img src="https://res.cloudinary.com/dxtp4ku5v/image/upload/v1723298835/WhatsApp_Image_2024-08-10_at_19.35.55_e1gil4.jpg" alt="Kennel Team">
+    </section>
+
+    
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://res.cloudinary.com/dxtp4ku5v/image/upload/t_op/v1723299042/WhatsApp_Image_2024-08-10_at_19.35.55_1_ujawo4.jpg" alt="Dog 1">
+            <img src="https://res.cloudinary.com/dxtp4ku5v/image/upload/v1723299384/WhatsApp_Image_2024-08-10_at_19.35.57_arkz0b.jpg" alt="Dog 2">
+            <img src="https://res.cloudinary.com/dxtp4ku5v/image/upload/t_okoko/v1723299473/WhatsApp_Image_2024-08-10_at_19.35.57_1_j1pwx6.jpg" alt="Dog 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>Email Us</h4>
+                <p>petclub687@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h4>Call Us</h4>
+                <p>8247525251</p>
+                <h4>Whatsapp</h4>
+                <p>7093201395</p>
+            </div>
+            <div class="contact-item">
+                <h4>Visit Us</h4>
+                <p>Mehdipatnam,Hyderabad,500028</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Club. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
